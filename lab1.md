@@ -37,4 +37,4 @@ Celem tego ćwiczenia było zaznajomienie się z podstawami usługi Azure SQL Da
 ---
 
 #### Krok 5: Tworzenie aplikacji
-   Z pomocą https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-quickstart?view=azuresql&tabs=visual-studio%2Cpasswordless%2Cservice-connector%2Cportal (chociaż część dotycząca jsona z connection stringiem jest niepoprawna -- musiałem ją poprawiać) stworzono lokalną obsługę metod POST i GET, którą następnie opublikowano w chmurze.
+   Z pomocą https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-entity-framework-core-quickstart?view=azuresql&tabs=visual-studio%2Cazure-portal%2Cportal (chociaż część dotycząca jsona z connection stringiem jest niepoprawna -- musiałem ją poprawiać) stworzono lokalną obsługę metod POST i GET, którą następnie opublikowano w chmurze.
