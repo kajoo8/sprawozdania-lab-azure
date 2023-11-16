@@ -60,7 +60,7 @@ Celem tego ćwiczenia było zaznajomienie się z podstawami usługi Azure SQL Da
 ---
 
 #### Krok 8: Azure CosmosDB
-   Utworzono domyślną bazę danych i kontener "Products" zgodnie z interfejsem wyświetlającym się po wybraniu "Launch quick start". Dodano 4 proste dokumenty z wykorzystaniem Data Explorer. Jego struktura przedstawiona jest na zrzucie poniżej, partycjonowanie jest po id.
+   Utworzono domyślną bazę danych i kontener "Products" zgodnie z interfejsem wyświetlającym się po wybraniu "Launch quick start". Dodano 4 proste dokumenty z wykorzystaniem Data Explorer. Jego struktura przedstawiona jest na zrzucie poniżej, partycjonowanie jest po id (czyli w sumie mamy item i parition_key taki sam, ale trudno).
 <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/bdfef4fc-9c81-4cde-94a6-7c6af8d8286a" alt="image" style="width:80%;"/>
 
 Wykonano dwa proste zapytania, które przedstawią pełną strukturę dokumentu json oraz sprawdzą działanie klauzuli WHERE.
@@ -69,4 +69,16 @@ Wykonano dwa proste zapytania, które przedstawią pełną strukturę dokumentu 
     <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/8230ac12-4196-445f-9154-aa9e49d7095c" alt="image" width="45%" height="400px">
 </div>
 
-   
+W zakładce Insights można monitorować wykorzystanie zasobów bazy.
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/5c68a462-1636-4648-840b-09368e3fb5ab" alt="image" style="width:80%;"/>
+
+Tym razem operacje na danych wykonano w Pythonie z uwagi na to, że jest to dla mnie bardziej komfortowy język i ścieżka learningowa Microsoftu oferuje dobry materiał (https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-python?tabs=azure-portal%2Cconnection-string%2Cwindows%2Csign-in-azure-cli%2Csync). Na poniższym screenie przedstawiono konsolowy program, w którym dodano nowy item do kontenera i wydrukowano go na ekranie. Dodany item również jest dostępny w Data Explorer.
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/6847f239-ee44-457f-ba80-92c9bd154d8a" alt="image" style="width:80%;"/>
+
+Z wykorzystaniem metody delete_item, która również przyjmuje item i klucz jako argument usunięto dane z bazy. Sprawdzono w Data Explorer i operacja powiodła się.
+
+---
+
+### Podsumowanie
+
+Wykonano wszystkie ćwiczenia, jednak nie udało się w pełni wykonać ćwiczenia z wirtualną maszyną z zainstalowanym SQL Server. W trakcie ćwiczeń zapoznano się z rozwiązaniami Azure zarówno w kontekście baz relacyjnych jak i nierelacyjnych.
