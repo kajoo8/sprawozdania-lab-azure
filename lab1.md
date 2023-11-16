@@ -37,4 +37,23 @@ Celem tego ćwiczenia było zaznajomienie się z podstawami usługi Azure SQL Da
 ---
 
 #### Krok 5: Tworzenie aplikacji
-   Z pomocą https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-entity-framework-core-quickstart?view=azuresql&tabs=visual-studio%2Cazure-portal%2Cportal (chociaż część dotycząca jsona z connection stringiem jest niepoprawna -- musiałem ją poprawiać) stworzono lokalną obsługę metod POST i GET, którą następnie opublikowano w chmurze.
+   Z pomocą poradników ścieżki learningowej Microsoftu i poradników na YouTube stworzono lokalną obsługę operacji CRUD w Swaggerze dla tabeli Customer. Dodano również IP do firewalla, aby zautoryzować dostęp do aplikacji. Na screenie widać poprawność rekordu z id=5 zwracanego przez API.
+   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/cad2f5c3-b622-41fb-9c15-026bafd54c1d" alt="image" style="width:90%;"/>
+   
+   Usunięto również klientów z id=1 i id=200 i sprawdzono wykonując zapytanie na bazie, czy poprawnie usunięto dane. Jak widać, brak id 1 i 200.
+   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/775682c4-34c0-4318-94b7-7fa95091b047" alt="image" style="width:90%;"/>
+
+---
+
+#### Krok 6: Wirtualna maszyna z SQL Server
+   Utworzono wirtualną maszynę z SQL Server, natomiast dwukrotnie jej deploy nie udał się. Po włączeniu maszyny i ustawieniu publicznego adresu połączenia nie udało się połączyć do serwera poprzez SSMS. Postępowano zgodnie z https://learn.microsoft.com/en-us/sql/ssms/quickstarts/ssms-connect-query-sql-server-azure-vm?view=sql-server-ver16
+
+---
+
+#### Krok 7: Azure Table Storage
+   Utworzono Azure Table Storage, a następnie prostym programem konsolowym dodano encję, usunięto encję i wyświetlono inną encję na ekranie. Poniżej znajdują się zrzuty ekranu użyte do tych działań.
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/b9ac589e-84aa-4d80-a1b3-db638dacefb8" alt="image" style="width:90%;"/>
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/103c58b9-afa6-4bab-b9a5-1ef59c2567c0" alt="image" style="width:90%;"/>
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/e0c47ce3-16c8-475c-a7fa-8b65a9c9ef7b" alt="image" style="width:90%;"/>
+
+   
