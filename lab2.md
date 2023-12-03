@@ -13,16 +13,25 @@ Celem tego ćwiczenia było zapoznanie się z usługą Azure Bing Search i prakt
 ---
 
 #### Krok 1: Środowisko
-   Wykorzystano już zainstalowane na komputerze Microsoft Visual Studio 2022.
+   Wykorzystano już zainstalowane na komputerze Microsoft Visual Studio 2022 i Visual Studio Code dla ćwiczenia 1.
 
 ---
 
 #### Krok 2: Utworzenie zasobu Azure Cognitive Services
-   Dokonano 
-   
+   Dokonano konfiguracji jak na screenie poniżej.
+
+   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/7dcf1773-3404-418b-a1d5-8150a13af757" alt="image" style="width:70%;"/>
+
 ---
 
-#### Krok 3:
+#### Kroki 3-7:
+   Ten punkt laboratorium jako jedyny wykonano w Pythonie z uwagi na lepszą znajomość i szybkość wykonania z pomocą poradników dostępnych w menu 'Quickstart'. Utworzono małe okno zbierające od użytkownika typ wyszukiwania i hasło wyszukiwania. Dostępne typy to wyszukiwanie: wiadomości (news), zdjęć (images) oraz zwykłe wyszukiwanie (web). Po kliknięciu 'OK' wyniki otwierają się w nowej karcie przeglądarki. Zdecydowano się rozszerzyć aplikację o wyświetlanie od razu najlepszego zwróconego wyniku. Rezultaty poniżej.
+
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/0bd2ec8b-5e22-40ed-bbb3-a0ab8e644ed7" alt="image" style="width:80%;"/>
+
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/a0e26fa9-90e8-48ac-992d-c622ac505f08" alt="image" style="width:80%;"/>
+
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/004961c8-18f2-4f51-a449-5f4ca5de1d67" alt="image" style="width:80%;"/>
 
 ---
 
@@ -39,7 +48,7 @@ Celem tego ćwiczenia było zaznajomienie się z Azure Speech Service oraz wykor
 #### Krok 1 i 2: Zasób Azure Speech
    Skonfigurowano zasoby jak na poniższym screenie.
    
-   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/79035517-489e-4a24-b247-71db7c5ab2cb" alt="image" style="width:80%;"/>
+   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/79035517-489e-4a24-b247-71db7c5ab2cb" alt="image" style="width:70%;"/>
    
 ---
 
@@ -80,7 +89,7 @@ Celem tego ćwiczenia było zapoznanie się z Azure Form Recognizer i jego zasto
 #### Krok 1 i 2: Zasób Azure Form Recognizer
 Skonfigurowano zasoby jak na poniższym screenie.
    
-   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/a7b2aba1-286f-4026-ac63-77f986b1b674" alt="image" style="width:80%;"/>
+   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/a7b2aba1-286f-4026-ac63-77f986b1b674" alt="image" style="width:70%;"/>
 
 ---
 
@@ -119,7 +128,7 @@ Celem tego ćwiczenia była nauka korzystania z Azure QnA Maker do tworzenia, sz
 #### Krok 1 i 2: Zasób Azure QnA Maker
   Portal zwrócił ostrzeżenie, że najnowsza wersja tego produktu jest dostępna w zasobie Language po dodaniu opcji na odpowiadanie na pytania niestandardowe. Nie mogłem utworzyć 'starszej' wersji, zatem postąpiłem tak jak wskazywało ostrzeżenie. Konfiguracja poniżej.
    
-   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/85159a0d-ce50-428a-8b99-5ded4da3b95a" alt="image" style="width:80%;"/>
+   <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/85159a0d-ce50-428a-8b99-5ded4da3b95a" alt="image" style="width:70%;"/>
 
 ---
 
@@ -132,7 +141,7 @@ Bazę udostępniono i wdrożono do wcześniej utworzonego zasobu. Z wykorzystani
 
 Powyższe pytanie zostało wprowadzone do bazy przeze mnie. Samo pytanie zostało trochę sparafrazowane, ale i tak bot dał radę na nie odpowiedzieć poprawnie. Następnie postanowiłem przetestować bazę domyślną. Na poniższym screenie można przyjrzeć się wynikom. Bot potrafił odpowiedzieć na pytanie spoza bazy, ale błędnie, aby innym razem poprawnie zorientować się, że nie umie na nie odpowiedzieć.
 
-<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/d1ceb597-6404-4ad2-bae3-943a8fbabb38" alt="image" style="width:80%;"/>
+<img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/d1ceb597-6404-4ad2-bae3-943a8fbabb38" alt="image" style="width:70%;"/>
 
 ---
 
