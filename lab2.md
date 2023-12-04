@@ -17,7 +17,7 @@ Celem tego ćwiczenia było zapoznanie się z usługą Azure Bing Search i prakt
 
 ---
 
-#### Krok 2: Utworzenie zasobu Azure Cognitive Services
+#### Krok 2: Utworzenie zasobu do Bing Search v7
    Dokonano konfiguracji jak na screenie poniżej.
 
    <img src="https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/7dcf1773-3404-418b-a1d5-8150a13af757" alt="image" style="width:60%;"/>
