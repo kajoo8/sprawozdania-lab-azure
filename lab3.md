@@ -11,6 +11,7 @@ Celem tego ćwiczenia było zapoznanie się z możliwością tworzenia, szkoleni
 ### Realizacja
 
 W zakładce Designer wybrano Image classification model i tam wybrano architekturę Densenet201 już wytrenowaną uprzednio. Parametry dodatkowego treningu przedstawiono poniżej.
+
 ![image](https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/651db2ad-9b0f-4e75-8533-724e99188f46)
 
 Wybrano zbiór ze zwierzętami, Animal Images Dataset, a następnie utworzono pipeline i odczekano odpowiednią ilość czasu, aby model się utworzył i wytrenował. 
