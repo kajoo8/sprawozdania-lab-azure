@@ -1,23 +1,27 @@
-## Sprawozdanie z Laboratorium 3 - Tworzenie i Wdrażanie Modelu ML do Rozpoznawania Obrazów z Azure Machine Learning i Integracja z Aplikacją C# MAUI
+## Sprawozdanie z Laboratorium 3 - Tworzenie i Wdrażanie Modelu ML do Rozpoznawania Obrazów z Azure Machine Learning
 
 ---
 
 ### Ćwiczenie 1
 
-Celem tego ćwiczenia było zapoznanie się z możliwością tworzenia, szkolenia i wdrażania modeli ML do rozpoznawania obrazów z Azure Machine Learning Studio i integracji z aplikacją mobilną C# MAUI.
+Celem tego ćwiczenia było zapoznanie się z możliwością tworzenia, szkolenia i wdrażania modeli ML do rozpoznawania obrazów z Azure Machine Learning Studio i integracji z aplikacją mobilną C# MAUI. Po wejściu na Azure Machine Learning Studio wyskakuje monit o tym, że Microsoft sugeruje korzystanie z zasobów Azure Machine Learning na ml.azure.com z uwagi na kończące się wsparcie w 2024 roku. Dodawanie nowych datasetów jest zablokowane, a liczba dostępnych niewielka - podsumoując zachęcają do używania innego zasobu niż ten wymieniony w instrukcji. Ćwiczenie jest trudne do wykonania w całości i zostanie wykonane na nowym zasobie, a nie tym wymienionym w instrukcji.
 
 ---
 
 ### Realizacja
 
----
+W zakładce Designer wybrano Image classification model i tam wybrano architekturę Densenet201 już wytrenowaną uprzednio. Parametry dodatkowego treningu przedstawiono poniżej.
+![image](https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/651db2ad-9b0f-4e75-8533-724e99188f46)
 
-#### Krok 1 i 2: Przygotowanie danych i tworzenie modelu
-   Po wejściu na Azure Machine Learning Studio wyskakuje monit o tym, że Microsoft sugeruje korzystanie z zasobów Azure Machine Learning na portal.azure z uwagi na kończące się wsparcie w 2024 roku. Jednak wciąż można z niego skorzystać, zatem postanowiono wykonać instrukcję jeszcze w Azure ML Studio.
-Stworzono nowy eksperyment, a wśród dostępnych zbiorów danych wybrano
+Wybrano zbiór ze zwierzętami, Animal Images Dataset, a następnie utworzono pipeline i odczekano odpowiednią ilość czasu, aby model się utworzył i wytrenował. 
+Uczenie trwało dość długo, jak na to, że mamy dostępny procesor w chmurze, który powinien być szybki. Taka architektura nie jest ogromna, danych też nie było dużo.
+
+Następnie utworzono endpoint z wytrenowaną siecią.
+
+![image](https://github.com/kajoo8/sprawozdania-lab-azure/assets/87271512/6d2601df-416f-4854-b388-01aff3261a4a)
 
 ---
 
 ### Podsumowanie
 
-Wykonano wszystkie ćwiczenia i wśród nich częściowo wykonano również opcjonalne funkcjonalności. Laboratorium pozwoliło na zapoznanie się z podstawowymi opcjami 4 usług MS Azure. Wszystkie z tych 4 usług mają duży potencjał. Chatbot można bardzo solidnie wytrenować i używać w zewnętrznych aplikacjach. Form Recognizer mógłby znacznie wspomóc i przyspieszyć żmudną pracę osób przepisujących dokumenty papierowe na elektroniczne, a Text to Speech z opcją dodawania własnych próbek głosu aktualnie jest dość często używany do generowania fałszywych filmów informacyjnych w sieci z wykorzystaniem wizerunku osób publicznych.
+Wykonano ćwiczenie w miarę możliwości na nowym zasobie, a nie tym wspomnianym w instrukcji. Warto tu napomnieć, że w porównaniu do poprzednich ćwiczeń w internecie jest bardzo mało dostępnych materiałów nt. tej usługi - jest ona nowa i może to jest przyczyną. Stara usługa nie będzie wspierana od sierpnia 2024.
